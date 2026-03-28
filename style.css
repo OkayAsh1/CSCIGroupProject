@@ -1,4 +1,4 @@
-/* ---------------- GLOBAL COLORS & FONTS ---------------- */
+/* ---------------- OLORS & FONTS ---------------- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Montserrat:wght@600&display=swap');
 
 :root {
@@ -66,7 +66,7 @@ body {
     font-size: 22px;
 }
 
-/* ---------------- CATEGORY GRID ---------------- */
+/* ---------------- GRID ---------------- */
 .categories {
     padding: 40px;
     text-align: center;
