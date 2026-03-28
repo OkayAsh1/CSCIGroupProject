@@ -1,0 +1,191 @@
+/* ---------------- GLOBAL COLORS & FONTS ---------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Montserrat:wght@600&display=swap');
+
+:root {
+    --primary: #7C3AED;   /* Purple */
+    --secondary: #06B6D4; /* Teal */
+    --accent: #F97316;    /* Orange */
+    --dark: #1E1E1E;
+    --light: #F5F5F5;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: var(--light);
+    color: var(--dark);
+}
+
+/* ---------------- NAVBAR ---------------- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    padding: 18px 30px;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+/* ---------------- HERO ---------------- */
+.hero {
+    background: linear-gradient(rgba(124,58,237,0.6), rgba(6,182,212,0.6)),
+                url('images/hero.jpg') center/cover no-repeat;
+    padding: 120px 20px;
+    text-align: center;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 22px;
+}
+
+/* ---------------- CATEGORY GRID ---------------- */
+.categories {
+    padding: 40px;
+    text-align: center;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.category-card {
+    background: white;
+    padding: 15px;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.category-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.category-card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+/* ---------------- MEAL TABLE ---------------- */
+.meal-table-section {
+    padding: 40px;
+}
+
+.meal-table {
+    width: 95%;
+    margin: auto;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+}
+
+.meal-table th {
+    background: var(--primary);
+    color: white;
+    padding: 14px;
+    font-size: 18px;
+}
+
+.meal-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.add-btn {
+    background: var(--accent);
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+.add-btn:hover {
+    background: #ea580c;
+}
+
+/* ---------------- QUIZ FORM ---------------- */
+.quiz-section {
+    padding: 40px;
+    text-align: center;
+}
+
+.quiz-form {
+    width: 50%;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+}
+
+.quiz-form input,
+.quiz-form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.submit-btn {
+    background: var(--secondary);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+.submit-btn:hover {
+    background: #0891b2;
+}
+
+/* ---------------- FOOTER ---------------- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--dark);
+    color: white;
+    margin-top: 40px;
+}

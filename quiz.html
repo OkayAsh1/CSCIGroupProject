@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diet Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <h1 class="logo">FuelFit Meals</h1>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="meals.html">Meals</a></li>
+            <li><a href="quiz.html">Diet Quiz</a></li>
+        </ul>
+    </nav>
+
+    <section class="quiz-section">
+        <h2>Diet Preference Quiz</h2>
+
+        <!-- Required Form -->
+        <form class="quiz-form">
+
+            <!-- Dietary Preference -->
+            <label>Diet Type:</label>
+            <select>
+                <option>Regular</option>
+                <option>Vegan</option>
+                <option>Vegetarian</option>
+                <option>Keto</option>
+                <option>High Protein</option>
+            </select>
+
+            <!-- Calorie Goal -->
+            <label>Daily Calorie Goal:</label>
+            <input type="number" placeholder="e.g., 1800">
+
+            <!-- Restrictions -->
+            <label>Food Restrictions:</label>
+            <input type="checkbox"> Dairy‑Free<br>
+            <input type="checkbox"> Gluten‑Free<br>
+            <input type="checkbox"> Nut‑Free<br>
+
+            <!-- Submit -->
+            <button type="submit" class="submit-btn">Submit Quiz</button>
+        </form>
+    </section>
+
+</body>
+</html>
