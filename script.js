@@ -2,6 +2,21 @@
 document.addEventListener("DOMContentLoaded", function () {
 
     // -------------------------------
+    // Navbar login display
+    // -------------------------------
+
+    const authNavItem = document.getElementById("authNavItem");
+    const currentUser = JSON.parse(localStorage.getItem("currentFuelFitUser"));
+
+    if (authNavItem) {
+        if (currentUser) {
+            authNavItem.innerHTML = '<a href="#">Account</a>';
+        } else {
+            authNavItem.innerHTML = '<a href="login.html">Log In</a>';
+        }
+    }
+
+    // -------------------------------
     // SIGN UP PAGE LOGIC
     // -------------------------------
 
