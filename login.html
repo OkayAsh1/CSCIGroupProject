@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic page setup -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In | FuelFit Meals</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <h1 class="logo">FuelFit Meals</h1>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="meals.html">Meals</a></li>
+            <li><a href="quiz.html">Diet Quiz</a></li>
+            <li><a href="login.html">Log In</a></li>
+        </ul>
+    </nav>
+
+    <!-- Login page content -->
+    <main class="auth-page">
+        <section class="auth-card">
+            <h2>Welcome Back</h2>
+            <p class="auth-subtext">
+                Log in to continue using FuelFit Meals.
+            </p>
+
+            <!-- Login form -->
+            <form id="loginForm" class="auth-form">
+                <label for="loginEmail">Email</label>
+                <input type="email" id="loginEmail" placeholder="Enter your email" required>
+
+                <label for="loginPassword">Password</label>
+                <input type="password" id="loginPassword" placeholder="Enter your password" required>
+
+                <button type="submit" class="auth-btn">Log In</button>
+            </form>
+
+            <!-- Message area for JavaScript -->
+            <p id="loginMessage" class="form-message"></p>
+
+            <!-- Link to sign up page -->
+            <p class="auth-switch-text">
+                Don’t have an account?
+                <a href="signup.html">Sign Up</a>
+            </p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 FuelFit Meals</p>
+    </footer>
+
+    <!-- JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -303,3 +303,100 @@ footer {
     padding: 4px 10px;
     border-radius: 3px;
 }
+
+/* ----------------------------- */
+/* Sign up / Login page styling  */
+/* ----------------------------- */
+
+.auth-page {
+    min-height: calc(100vh - 160px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+}
+
+.auth-card {
+    background-color: white;
+    width: 100%;
+    max-width: 500px;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.auth-card h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.auth-subtext {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.auth-form label {
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.auth-form input {
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.auth-btn {
+    margin-top: 15px;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #7b2ff7, #00c6ff);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.auth-btn:hover {
+    opacity: 0.9;
+}
+
+.form-message {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 18px;
+    min-height: 24px;
+}
+
+.auth-switch-text {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.auth-switch-text a {
+    color: #7b2ff7;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.auth-switch-text a:hover {
+    text-decoration: underline;
+}
+
+/* Make the CTA button link on the home page still look like a button */
+a.cta-btn {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+}
