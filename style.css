@@ -1,20 +1,24 @@
-/* ---------------- COLORS & FONTS ---------------- */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Montserrat:wght@600&display=swap');
+/* CLAY + STONE MINIMAL — STYLE 3 */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Montserrat+Alternates:wght@600&display=swap');
 
 :root {
-    --primary: #7C3AED;   /* Purple */
-    --secondary: #06B6D4; /* Teal */
-    --accent: #F97316;    /* Orange */
-    --dark: #1E1E1E;
-    --light: #F5F5F5;
+    --primary: #A0522D;   /* Clay */
+    --secondary: #D2B48C; /* Tan */
+    --accent: #8B4513;    /* Rich brown */
+    --dark: #2A2A2A;
+    --light: #F2EFEA;     /* Stone */
 }
 
 body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
     background: var(--light);
     color: var(--dark);
+    font-family: 'Merriweather', serif;
 }
+
+.logo, .hero h2 {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
 
 /* ---------------- NAVBAR ---------------- */
 .navbar {
