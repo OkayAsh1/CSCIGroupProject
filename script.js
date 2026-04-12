@@ -8,12 +8,35 @@ document.addEventListener("DOMContentLoaded", function () {
     const authNavItem = document.getElementById("authNavItem");
     const currentUser = JSON.parse(localStorage.getItem("currentFuelFitUser"));
 
-    if (authNavItem) {
+       if (authNavItem) {
         if (currentUser) {
-            authNavItem.innerHTML = '<a href="#">Account</a>';
+            // If a user is logged in, show Account and Log Out
+            authNavItem.innerHTML = `
+                <a href="#">Account</a>
+                <span> | </span>
+                <a href="#" id="logoutLink">Log Out</a>
+            `;
         } else {
+            // If no user is logged in, show the normal Log In link
             authNavItem.innerHTML = '<a href="login.html">Log In</a>';
         }
+    }
+
+  
+    // Logout 
+
+    const logoutLink = document.getElementById("logoutLink");
+
+    if (logoutLink) {
+        logoutLink.addEventListener("click", function (event) {
+            event.preventDefault();
+
+            // Remove the currently logged-in user from localStorage
+            localStorage.removeItem("currentFuelFitUser");
+
+            // Send the user back to the home page
+            window.location.href = "index.html";
+        });
     }
 
     // -------------------------------
