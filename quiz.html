@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta-name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diet Quiz</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -22,35 +22,37 @@
     <section class="quiz-section">
         <h2>Diet Preference Quiz</h2>
 
-        <!-- Required Form -->
+        <!-- Updated form to better match everything -->
         <form class="quiz-form">
 
-            <!-- Dietary Preference -->
-            <label>Diet Type:</label>
-            <select>
-                <option>Regular</option>
-                <option>Vegan</option>
-                <option>Vegetarian</option>
-                <option>Keto</option>
-                <option>High Protein</option>
-            </select>
+            <div class="form-group">
+                <label>Diet Type:</label>
+                <select>
+                    <option>Regular</option>
+                    <option>Vegan</option>
+                    <option>Vegetarian</option>
+                    <option>Keto</option>
+                    <option>High Protein</option>
+                </select>
+            </div>
 
-            <!-- Calorie Goal -->
-            <label>Daily Calorie Goal:</label>
-            <input type="number" placeholder="e.g., 1800">
+            <div class="form-group">
+                <label>Daily Calorie Goal:</label>
+                <input type="number" placeholder="e.g., 1800">
+            </div>
 
-            <!-- Restrictions -->
-            <label>Food Restrictions:</label>
-            <input type="checkbox"> Dairy‑Free<br>
-            <input type="checkbox"> Gluten‑Free<br>
-            <input type="checkbox"> Nut‑Free<br>
+            <div class="form-group">
+                <label>Food Restrictions:</label>
+                <label><input type="checkbox"> Dairy‑Free</label>
+                <label><input type="checkbox"> Gluten‑Free</label>
+                <label><input type="checkbox"> Nut‑Free</label>
+            </div>
 
-            <!-- Submit -->
             <button type="submit" class="submit-btn">Submit Quiz</button>
         </form>
     </section>
 
-
-    <script src="script.js"></script>  
+    <script src="script.js"></script>
 </body>
 </html>
+
