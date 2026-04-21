@@ -404,3 +404,75 @@ a.cta-btn {
     text-decoration: none;
     text-align: center;
 }
+/* ------------------------------
+   QUIZ PAGE LAYOUT FIXES
+   ------------------------------ */
+
+.quiz-section {
+    max-width: 600px;
+    margin: 4rem auto;
+    padding: 2rem;
+    background: #f5f1e8; /* soft earthy cream */
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.quiz-section h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #3b3a36; /* earthy dark brown */
+}
+
+.quiz-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #3b3a36;
+}
+
+.quiz-form input[type="number"],
+.quiz-form select {
+    padding: 10px;
+    border: 1px solid #c9c3b8;
+    border-radius: 6px;
+    background: #fff;
+    font-size: 1rem;
+}
+
+.form-group label input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+.submit-btn {
+    padding: 12px 20px;
+    background-color: var(--secondary);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.2s ease;
+    font-weight: 600;
+}
+
+.submit-btn:hover {
+    background-color: #c19a6b;
+}
+
+@media (max-width: 480px) {
+    .quiz-section {
+        margin: 2rem 1rem;
+        padding: 1.5rem;
+    }
+}
+
