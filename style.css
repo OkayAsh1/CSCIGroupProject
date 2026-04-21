@@ -148,46 +148,7 @@ body {
     background: #ea580c;
 }
 
-/* ---------------- QUIZ FORM ---------------- */
-.quiz-section {
-    padding: 40px;
-    text-align: center;
-}
 
-.quiz-form {
-    width: 50%;
-    margin: auto;
-    background: white;
-    padding: 30px;
-    border-radius: 14px;
-    box-shadow: 0 4px 14px rgba(0,0,0,0.15);
-}
-
-.quiz-form input,
-.quiz-form select {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 18px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-}
-
-.submit-btn {
-    background: var(--secondary);
-    color: white;
-    padding: 12px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-    transition: 0.3s;
-    font-weight: 600;
-}
-
-.submit-btn:hover {
-    background: #0891b2;
-}
 
 /* ---------------- FOOTER ---------------- */
 footer {
