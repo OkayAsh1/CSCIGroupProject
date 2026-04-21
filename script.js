@@ -151,5 +151,52 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }
+    
+    // -------------------------------
+    // QUIZ SUBMISSION + RESULTS LOGIC
+    // -------------------------------
 
-});
+    function submitQuiz(event) {
+        event.preventDefault();
+
+        const diet = document.querySelector("select").value;
+        const calories = document.querySelector("input[type='number']").value;
+
+        const restrictions = [...document.querySelectorAll("input[type='checkbox']")]
+            .filter(c => c.checked)
+            .map(c => c.parentElement.innerText.trim());
+
+        localStorage.setItem("quizResults", JSON.stringify({
+            diet,
+            calories,
+            restrictions
+        }));
+
+        window.location.href = "results.html";
+    }
+
+    // Attach listener only on quiz page
+    if (window.location.pathname.includes("quiz.html")) {
+        const quizForm = document.querySelector(".quiz-form");
+        if (quizForm) {
+            quizForm.addEventListener("submit", submitQuiz);
+        }
+    }
+
+    // Load results only on results page
+    if (window.location.pathname.includes("results.html")) {
+        const box = document.getElementById("resultsBox");
+        const data = JSON.parse(localStorage.getItem("quizResults"));
+
+        if (data && box) {
+            box.innerHTML = `
+                <p><strong>Diet Type:</strong> ${data.diet}</p>
+                <p><strong>Calorie Goal:</strong> ${data.calories}</p>
+                <p><strong>Restrictions:</strong> ${data.restrictions.join(", ") || "None"}</p>
+            `;
+        }
+    }
+
+}); 
+
+
